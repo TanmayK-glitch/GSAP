@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#main{
+    position: relative;
+    min-height: 100vh;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+}
+
+#navbar i {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#fullNav{
+    height: 100%;
+    width: 25%;
+    top: 0;
+    right: -40%;
+    background-color: rgba(10, 176, 222, 0.403);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+}
+
+#fullNav i {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    background-color: brown;
+    border-radius: 50%;
+    padding: 5px 5px;
+}
