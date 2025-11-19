@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.brands-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 1.5rem 0;
+}
+
+.brand-logo {
+  height: 70px;
+  object-fit: contain;
+  max-width: 110px;
+  scale: 1.35;
+}
+
