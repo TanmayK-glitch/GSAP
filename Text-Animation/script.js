@@ -4,12 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
     function breakText() {
         const h1Element = document.querySelector("#h1Text");
         const text = h1Element.textContent.trim();
+        
+        var splittedText = text.split("");
         var halfValue = text.length / 2;
 
         let clutter = "";
 
-        text.split("").forEach((char, index) => {
-            if(index < halfValue){
+        splittedText.forEach((char, index) => {
+            if (index < halfValue) {
                 clutter += `<span class="a">${char}</span>`;
             } else {
                 clutter += `<span class="b">${char}</span>`;
@@ -21,17 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gsap.from("#h1Text .a", {
         y: 50,
-        duration: 0.5, 
+        duration: 0.5,
         opacity: 0,
         delay: 1,
         stagger: 0.1,
-        ease: "power3.out"  
+        ease: "power3.out"
     });
 
     gsap.from("#h1Text .b", {
-        y: 50, 
-        duration: 0.5, 
-        opacity: 0, 
+        y: 50,
+        duration: 0.5,
+        opacity: 0,
         delay: 1,
         stagger: -0.1,
         ease: "power3.out"
