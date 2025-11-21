@@ -2,9 +2,39 @@
 
 @import "tailwindcss";
 
+@theme {
+  --font-clash: "Clash Display", sans-serif;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.heading-font {
+  font-family: "Clash Display", sans-serif;
+}
+
+
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  color: #efe6d2;
+}
+
+h2,
+h3,
+h4,
+h5,
+button {
   font-family: "Manrope", sans-serif;
+}
+
+body {
   background-color: #010100;
-  color: #a3a3a3;
+  color: #b5b5b5;
 }
