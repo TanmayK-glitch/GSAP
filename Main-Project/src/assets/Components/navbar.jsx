@@ -6,12 +6,20 @@ function Navbar() {
             <nav className="flex items-center justify-between p-6">
                 <div id="Logo" className="flex">
                     <h1 className="font-clash font-semibold text-6xl">Orbit</h1>
-                    {/* <i class="ri-menu-3-fill"></i> */}
                 </div>
                 <div id="full-nav" className="flex gap-15 items-center font-semibold">
-                    <h5 className="cursor-pointer">About</h5>
-                    <h5 className="cursor-pointer">Projects</h5>
-                    <h5 className="cursor-pointer">Capabilities</h5>
+                    <h5 className="cursor-pointer relative group">
+                        About
+                        <span className="absolute bottom-0 left-0 w-0 h-px bg-[#efe6d2] transition-all duration-300 ease-out group-hover:w-full"></span>
+                    </h5>
+                    <h5 className="cursor-pointer relative group">
+                        Projects
+                        <span className="absolute bottom-0 left-0 w-0 h-px bg-[#efe6d2] transition-all duration-300 ease-out group-hover:w-full"></span>
+                    </h5>
+                    <h5 className="cursor-pointer relative group">
+                        Capabilities
+                        <span className="absolute bottom-0 left-0 w-0 h-px bg-[#efe6d2] transition-all duration-300 ease-out group-hover:w-full"></span>
+                    </h5>
                     <button className="w-full md:w-auto group relative px-7 py-3 rounded-4xl bg-[#efe6d2] text-black text-lg font-semibold overflow-hidden transition-all hover:scale-[1.02]">
                         <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
                         <span className="relative z-10 flex items-center justify-between gap-4">
