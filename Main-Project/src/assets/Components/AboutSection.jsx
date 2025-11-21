@@ -102,7 +102,7 @@ function AboutSection() {
                         </div>
 
                         <div ref={addToRefs} className="mt-12 md:mt-0">
-                            <button className="w-full md:w-auto group relative px-8 py-4 bg-[#efe6d2] text-black text-lg font-bold rounded-full overflow-hidden transition-all hover:scale-[1.02]">
+                            <button className="w-full md:w-auto group relative px-8 py-4 bg-[#efe6d2] text-black text-lg font-semibold rounded-full overflow-hidden transition-all hover:scale-[1.02]">
                                 <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
                                 <span className="relative z-10 flex items-center justify-between gap-4">
                                     Let's Talk
