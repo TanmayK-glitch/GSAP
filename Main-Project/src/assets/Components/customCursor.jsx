@@ -35,9 +35,10 @@ function CustomCursor() {
                     borderRadius: "50%",
                     backgroundColor: "#efe6d2",
                     pointerEvents: "none",
-                    zIndex: 9999,
+                    zIndex: 2147483647,
                     transform: "translate(-50%, -50%)",
                     mixBlendMode: "difference",
+                    isolation: "isolate",
                 }}
             />
 
