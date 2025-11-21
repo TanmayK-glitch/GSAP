@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-function Cursor() {
+function CustomCursor() {
     const cursorRef = useRef(null);
 
     useEffect(() => {
@@ -45,4 +45,4 @@ function Cursor() {
     )
 }
 
-export default Cursor;
+export default CustomCursor;

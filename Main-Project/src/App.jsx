@@ -1,16 +1,18 @@
 import './App.css'
-import Navbar from './assets/Components/navbar'
-import Cursor from './assets/Components/customCursor'
-import HomePage from './assets/Components/homePage'
+import CustomCursor from './assets/Components/CustomCursor'
+import Navbar from './assets/Components/Navbar'
+import HomePage from './assets/Components/HomePage'
+import WorkSection from './assets/Components/WorkSection'
 
 
 function App() {
 
   return (
     <>
-      < Cursor />
+      <CustomCursor />
       <Navbar />
       <HomePage />
+      <WorkSection />
     </>
   )
 }
