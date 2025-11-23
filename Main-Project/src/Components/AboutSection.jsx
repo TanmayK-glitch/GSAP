@@ -24,7 +24,7 @@ function AboutSection() {
                 ease: "expo.out",
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top 75%",
+                    start: "top 90%",
                 }
             });
 
@@ -37,7 +37,7 @@ function AboutSection() {
                 ease: "power4.out",
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top 75%",
+                    start: "top 90%",
                 }
             });
 
