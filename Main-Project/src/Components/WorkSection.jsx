@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
+import gsap from "gsap";
+import { useEffect } from "react";
 
 const Divider = () => (
     <div className="px-18">
@@ -7,9 +9,43 @@ const Divider = () => (
 );
 
 function WorkSection() {
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        const cursor = document.querySelector("#cursor");
+        const workItems = document.querySelectorAll("#work1, #work2, #work3, #work4, #work5");
+
+        workItems.forEach((item) => {
+            item.addEventListener("mouseenter", () => {
+                cursor.innerHTML = "View More";
+                gsap.to(cursor, {
+                    scale: 3,
+                    duration: 0.3,
+                    ease: "power2.out"
+                });
+            });
+
+            item.addEventListener("mouseleave", () => {
+                cursor.innerHTML = "";
+                gsap.to(cursor, {
+                    scale: 1,
+                    duration: 0.3,
+                    ease: "power2.out"
+                });
+            });
+        });
+
+        return () => {
+            workItems.forEach((item) => {
+                item.removeEventListener("mouseenter", () => { });
+                item.removeEventListener("mouseleave", () => { });
+            });
+        };
+    }, []);
+
     return (
         <>
-            <section>
+            <section className="cursor-pointer">
                 <div id="mainCont" className="mt-72"><Divider />
                     <div id="work1" className="flex justify-between px-18 py-9 items-center">
                         <h4 className="font-bold text-[7rem]">ATLAS MOTORS</h4>

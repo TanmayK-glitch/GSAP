@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 
-import AmazonLogo from "../BrandLogos/Amazon.png";
-import DribbleLogo from "../BrandLogos/Dribble.png";
-import HubspotLogo from "../BrandLogos/Hubspot.png";
-import NetflixLogo from "../BrandLogos/Netflix.png";
-import PaypalLogo from "../BrandLogos/Paypal.png";
-import ZoomLogo from "../BrandLogos/Zoom.png";
+import AmazonLogo from "../assets/BrandLogos/Amazon.png";
+import DribbleLogo from "../assets/BrandLogos/Dribble.png";
+import HubspotLogo from "../assets/BrandLogos/Hubspot.png";
+import NetflixLogo from "../assets/BrandLogos/Netflix.png";
+import PaypalLogo from "../assets/BrandLogos/Paypal.png";
+import ZoomLogo from "../assets/BrandLogos/Zoom.png";
 
 const brandLogos = [
     { src: AmazonLogo, alt: "Amazon" },

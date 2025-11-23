@@ -2,7 +2,7 @@ function Footer() {
     return (
         <>
             <footer className="mt-40 px-10 mb-10">
-                <hr className="mb-10 border-t border-white/40"/><div id="box" className="flex items-center justify-between">
+                <hr className="mb-10 border-t border-white/40" /><div id="box" className="flex items-center justify-between">
                     <div id="text1">
                         <p className="font-medium text-xl">© 2025</p>
                     </div>

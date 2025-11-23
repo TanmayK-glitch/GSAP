@@ -9,7 +9,7 @@ function CustomCursor() {
             gsap.to(cursorRef.current, {
                 x: e.clientX,
                 y: e.clientY,
-                duration: 0.4,
+                duration: 0.25,
                 ease: "power2.out",
 
             });
@@ -25,6 +25,7 @@ function CustomCursor() {
     return (
         <>
             <div
+                id="cursor"
                 ref={cursorRef}
                 style={{
                     position: "fixed",
@@ -39,6 +40,15 @@ function CustomCursor() {
                     transform: "translate(-50%, -50%)",
                     mixBlendMode: "difference",
                     isolation: "isolate",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    textAlign: "center",
+                    fontSize: "3.5px",
+                    fontFamily: "Clash Display",
+                    fontWeight: "400",
+                    color: "black",
+                    padding: "3px 3px"
                 }}
             />
 

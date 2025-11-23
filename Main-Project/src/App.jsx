@@ -1,12 +1,12 @@
 import './App.css'
-import CustomCursor from './assets/Components/CustomCursor'
-import Navbar from './assets/Components/Navbar'
-import HomePage from './assets/Components/HomePage'
-import WorkSection from './assets/Components/WorkSection'
-import Carousel from './assets/Components/Carousel'
-import AboutSection from './assets/Components/AboutSection'
-import VerticalScroll from './assets/Components/VerticalScroll'
-import Footer from './assets/Components/Footer'
+import CustomCursor from './Components/CustomCursor'
+import Navbar from './Components/Navbar'
+import HomePage from './Components/HomePage'
+import WorkSection from './Components/WorkSection'
+import Carousel from './Components/Carousel'
+import AboutSection from './Components/AboutSection'
+import VerticalScroll from './Components/VerticalScroll'
+import Footer from './Components/Footer'
 
 
 function App() {
