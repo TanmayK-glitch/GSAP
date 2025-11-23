@@ -46,9 +46,8 @@ function CustomCursor() {
                     textAlign: "center",
                     fontSize: "3.5px",
                     fontFamily: "Clash Display",
-                    fontWeight: "400",
+                    fontWeight: "500",
                     color: "black",
-                    padding: "3px 3px"
                 }}
             />
 

@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import gsap from "gsap";
 import { useEffect } from "react";
+import { _getTarget } from "gsap/Observer";
 
 const Divider = () => (
     <div className="px-18">
@@ -10,6 +11,7 @@ const Divider = () => (
 
 function WorkSection() {
     const sectionRef = useRef(null);
+    const fadeRef = useRef([]);
 
     useEffect(() => {
         const cursor = document.querySelector("#cursor");
@@ -19,9 +21,17 @@ function WorkSection() {
             item.addEventListener("mouseenter", () => {
                 cursor.innerHTML = "View More";
                 gsap.to(cursor, {
-                    scale: 3,
+                    scale: 5,
                     duration: 0.3,
                     ease: "power2.out"
+                });
+
+                let geth4 = item.querySelector("h4");
+                gsap.to(geth4, {
+                    x: 50,
+                    duration: 0.6,
+                    ease: "power2.out",
+                    opacity: 0.5,
                 });
             });
 
@@ -30,10 +40,37 @@ function WorkSection() {
                 gsap.to(cursor, {
                     scale: 1,
                     duration: 0.3,
-                    ease: "power2.out"
+                    ease: "power2.out",
+                });
+
+                let geth4 = item.querySelector("h4");
+                gsap.to(geth4, {
+                    x: 0,
+                    duration: 0.6,
+                    ease: "power2.out",
+                    opacity: 1,
                 });
             });
         });
+
+        // Fade In / Out Animation for h4
+        // const handleText = document.querySelector("h4");
+        // const handleMouseEnter = () => {
+        //     gsap.to(handleText, {
+        //         x: 50,
+        //         duration: 2,
+        //         ease: "power2.out",
+        //     });
+        // }
+
+        // const handleMouseLeave = () => {
+        //     gsap.to(handleText, {
+        //         x: 0,
+        //         duration: 2,
+        //         ease: "power2.out"
+        //     });
+        // }
+
 
         return () => {
             workItems.forEach((item) => {
