@@ -23,6 +23,7 @@ function VerticalScroll() {
                     end: "+=2000",
                     scrub: 2,
                     pin: true,
+                    anticipatePin: 1,
                     invalidateOnRefresh: true,
                 }
             });

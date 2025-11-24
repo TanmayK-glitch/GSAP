@@ -2,6 +2,8 @@ import gsap from "gsap"
 import { useEffect, useRef } from "react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Footer() {
     const footerRef = useRef([]);
 

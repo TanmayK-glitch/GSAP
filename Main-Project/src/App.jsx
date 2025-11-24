@@ -8,9 +8,7 @@ import AboutSection from './Components/AboutSection'
 import VerticalScroll from './Components/VerticalScroll'
 import Footer from './Components/Footer'
 
-
 function App() {
-
   return (
     <>
       <CustomCursor />
