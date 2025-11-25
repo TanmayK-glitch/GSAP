@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from 'gsap'
 
-function Cursor(){
+function Cursor() {
 
     const moveMouseHandle = (event) => {
         console.log("Mouse Moved!");
@@ -13,11 +13,11 @@ function Cursor(){
 
         })
     }
-    return(
+    return (
         <>
-        <div id="mainBox" onMouseMove={moveMouseHandle} className="bg-red-500">
-            <div id="cursor" className="h-[15px] w-[15px] bg-white rounded-[50%]"></div>
-        </div>
+            <div id="mainBox" onMouseMove={moveMouseHandle} className="bg-red-500">
+                <div id="cursor" className="h-[15px] w-[15px] bg-white rounded-[50%]"></div>
+            </div>
         </>
     )
 }
