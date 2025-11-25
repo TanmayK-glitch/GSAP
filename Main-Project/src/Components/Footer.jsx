@@ -13,7 +13,6 @@ function Footer() {
                 y: -30,
                 duration: 1,
                 opacity: 0,
-                delay: 0.3,
                 stagger: 0.15,
                 ease: "power3.out",
                 scrollTrigger: {
